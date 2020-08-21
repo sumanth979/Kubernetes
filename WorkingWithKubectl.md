@@ -1,4 +1,4 @@
-# KubeCtl
+# Kubectl
 
 ##### To get the kubectl version
 ```bash
