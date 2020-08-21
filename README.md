@@ -21,12 +21,12 @@ minikube start --driver=virtualbox
 minikube status
 ```
 
-###### To stop the running minikube
+##### To stop the running minikube
 ```bash
 minikube stop
 ```
 
-###### To cleanup the local state of minikube
+##### To cleanup the local state of minikube
 ```bash
 minikube delete
 ```
