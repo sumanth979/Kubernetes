@@ -30,4 +30,3 @@ minikube stop
 ```bash
 minikube delete
 ```
-
