@@ -30,3 +30,5 @@ minikube stop
 ```bash
 minikube delete
 ```
+#### To know more details about Kubectl
+[a link](https://github.com/user/repo/blob/branch/other_file.md)
