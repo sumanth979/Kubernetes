@@ -21,7 +21,7 @@ kubectl get nodes -o wide
 kubectl get pods
 ```
 
-##### To get the running PODs with more details (like ipadd of POD etc)
+##### To get the running PODs with more details (like ipadd of POD, Node in which POD is running.. etc)
 ```bash
 kubectl get pods -o wide
 ```
