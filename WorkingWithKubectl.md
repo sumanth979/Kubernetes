@@ -30,3 +30,8 @@ kubectl get pods -o wide
 ```bash
 kubectl run applicationName --image=imageNameInDockerRepository
 ```
+
+##### To get the more details about the POD.
+```bash
+kubectl describe pod podName
+```
