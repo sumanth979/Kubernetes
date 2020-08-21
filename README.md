@@ -31,4 +31,4 @@ minikube stop
 minikube delete
 ```
 #### To know more details about Kubectl
-[a link](https://github.com/user/repo/blob/branch/other_file.md)
+  [Kubectl](https://github.com/sumanth979/Kubernetes/blob/master/WorkingWithKubectl.md)
