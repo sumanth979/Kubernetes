@@ -42,3 +42,14 @@ kubectl create -f application.yaml
         (or)
 kubectl apply -f application.yaml
 ```
+
+##### To delete the running POD
+```bash
+kubectl delete pod podName
+```
+
+##### To edit and rebuild the running POD
+* This command will update the template and will recreate the POD
+```bash
+kubectl edit pod podName
+```
