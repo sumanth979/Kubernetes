@@ -35,3 +35,10 @@ kubectl run applicationName --image=imageNameInDockerRepository
 ```bash
 kubectl describe pod podName
 ```
+
+##### To create a pod with yaml file.
+```bash
+kubectl create -f application.yaml 
+        (or)
+kubectl apply -f application.yaml
+```
