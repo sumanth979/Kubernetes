@@ -42,3 +42,24 @@ kubectl delete deployment deploymentName
 kubectl describe deployment deploymentName
 ```
 
+## Updates and RollBacks
+### Rollout and Versioning
+* When a deployment is created it triggers a new Rollout
+  * A new Rollout will create a new deployment Revision. (versioning - Revision 1)
+* In future when the application is upgraded (container version upgraded etc..) it will trigger a new Rollout
+  * A new Rollout will create a new deployment Revision. (versioning - Revision 2)
+* This help us to keep track of changes made to our deployments and enables us to rollback to a previous version when ever necessary.
+
+##### To check the status of deployment rollout
+```bash
+kubectl rollout status deployment/deploymentName
+```
+
+##### To check the status of rollout history of a deployment
+* It will provide the
+  * Revisions and
+  * History of deployment
+```bash
+kubectl rollout history deployment/deploymentName
+```
+
