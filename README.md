@@ -30,5 +30,11 @@ minikube stop
 ```bash
 minikube delete
 ```
+
+##### To get the url of service in minikube
+```bash
+minikube service serviceName --url
+```
+
 #### To know more details about Kubectl
 * [Kubectl](https://github.com/sumanth979/Kubernetes/blob/master/WorkingWithKubectl.md)
