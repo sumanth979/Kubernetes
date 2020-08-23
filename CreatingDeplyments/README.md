@@ -73,7 +73,7 @@ kubectl rollout history deployment/deploymentName
 * Default deployment Strategy
   * **Advantages:** No application downtime & seemless upgrade.
 
-#### Updates to deployment
+### Updates to deployment
 ##### To update deployment
 ```bash
 kubectl apply -f updatedApplication.yaml
@@ -83,7 +83,7 @@ kubectl apply -f updatedApplication.yaml
 ```bash
 kubectl set image deployment/deploymentName imageName=newImageName
 ```
-####  Deployment Rollbacks
+###  Deployment Rollbacks
 ##### To Rollback a deployment
 ```bash
 kubectl rollout undo deployment/deploymentName
