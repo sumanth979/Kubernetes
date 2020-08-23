@@ -63,7 +63,7 @@ kubectl rollout status deployment/deploymentName
 kubectl rollout history deployment/deploymentName
 ```
 
-## Deployment Strategies
+### Deployment Strategies
 #### Recreate Strategy
 * In this strategy we will delete all the running instances and will create the instances again with the newer updates.
   * **Disadvantage:** The application will be down for some time.(The time gap after shutting down all the instances and the new instances become ready)
