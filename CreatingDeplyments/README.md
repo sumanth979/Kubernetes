@@ -63,3 +63,24 @@ kubectl rollout status deployment/deploymentName
 kubectl rollout history deployment/deploymentName
 ```
 
+## Deployment Strategies
+#### Recreate Strategy
+* In this strategy we will delete all the running instances and will create the instances again with the newer updates.
+  * **Disadvantage:** The application will be down for some time.(The time gap after shutting down all the instances and the new instances become ready)
+
+#### Rolling Update Strategy
+* In this strategy we will delete one running instance and will create the one instances again with the newer updates one by one.
+* Default deployment Strategy
+  * **Advantages:** No application downtime & seemless upgrade.
+
+
+##### To update deployment
+```bash
+kubectl apply -f updatedApplication.yaml
+```
+
+##### To update the image in deployment
+```bash
+kubectl set image deployment/deploymentName imageName=newImageName.
+```
+
