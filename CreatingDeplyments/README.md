@@ -62,6 +62,13 @@ kubectl rollout status deployment/deploymentName
 ```bash
 kubectl rollout history deployment/deploymentName
 ```
+```bash
+Sample Example:
+REVISION  CHANGE-CAUSE
+1         <>
+2         <>
+3         <>
+```
 
 ### Deployment Strategies
 #### Recreate Strategy
@@ -74,9 +81,12 @@ kubectl rollout history deployment/deploymentName
   * **Advantages:** No application downtime & seemless upgrade.
 
 ### Updates to deployment
-##### To update deployment
+##### To update/edit the deployment
 ```bash
 kubectl apply -f updatedApplication.yaml
+```
+```bash
+kubectl edit deployment deploymentName 
 ```
 
 ##### To update the image in deployment
