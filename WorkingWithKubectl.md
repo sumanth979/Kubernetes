@@ -5,6 +5,11 @@
 kubectl version (or) kubectl version --client
 ```
 
+#### To get all the running things(like PODs, ReplicaSets, Deployments etc..)
+```bash
+kubectl get all
+```
+
 ## Working with Nodes
 ##### To get the running Nodes
 ```bash
@@ -105,4 +110,43 @@ kubectl scale --replicas=6 replicaset replicaSetName
                  (or)
 kubectl scale --replicas=6 -f application.yaml               
 ```
+
+## Working with Deployment
+##### To create a new deployment with application.yaml file.
+```bash
+kubectl create -f  application.yaml
+            [or]
+kubectl apply -f  application.yaml
+```
+
+##### To get the details of deployment.
+```bash
+kubectl get deployment
+```
+```bash
+sample Example:
+NAME             READY   UP-TO-DATE   AVAILABLE   AGE
+httpd-frontend   0/3     3            0           11s
+nginx            1/1     1            1           46h
+```
+```bash
+kubectl get deployment -o wide
+```
+```bash
+sample Example:
+NAME             READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS       IMAGES             SELECTOR
+httpd-frontend   1/3     3            1           33s   httpd-frontend   httpd:2.4-alpine   name=webapp
+nginx            1/1     1            1           46h   nginx            nginx              run=nginx
+```
+
+##### To delete the deployment.
+```bash
+kubectl delete deployment deploymentName
+```
+
+##### To get the more details about the replicaSet.
+```bash
+kubectl describe deployment deploymentName
+```
+
 
