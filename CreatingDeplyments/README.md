@@ -1,5 +1,10 @@
 ## Working with Deployment
-* 
+Deployment will Handle
+* Deployments
+* Updates to newer version (Rolling update - without impacting the users) 
+* RollBacks to older version 
+* Pause / Resume for multiple updates (Pause changes then do the updates one by one and resume changes will effect all changes at once).
+
 ##### To create a new deployment with application.yaml file.
 ```bash
 kubectl create -f  application.yaml
