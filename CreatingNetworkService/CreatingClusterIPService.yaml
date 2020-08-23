@@ -1,0 +1,13 @@
+# Creating a cluster IP for back-end services
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapp-back-end
+spec:
+  type: ClusterIP
+  ports:
+  - targetPort: 80
+    port: 80
+  selector:
+   app: myapp
+   type: back-end
