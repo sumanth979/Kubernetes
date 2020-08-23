@@ -1,4 +1,8 @@
 ## Working with ReplicaSets
+* The only difference between replica set and replication controller is the selector types. The replication controller supports equality based selectors whereas the replica set supports equality based as well as set based selectors.
+* Replication Controller will not consider managing the existing containers with same labels/details.
+* Replication Set will consider managing the existing containers with same labels/details.
+
 ##### To create a new replicaSet.
 ```bash
 kubectl create -f  application.yaml
