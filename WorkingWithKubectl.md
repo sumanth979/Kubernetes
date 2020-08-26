@@ -21,6 +21,23 @@ kubectl get nodes -o wide
 ```
 
 ## Working with PODs
+##### To create a new POD with running an application image.
+* To create the POD directly without using .yaml file. 
+```bash
+kubectl run applicationName --image=imageNameInDockerRepository
+```
+```bash
+sample command to create a nginx pod:
+kubectl run nginx --image=nginx
+```
+
+##### To create a pod with yaml file.
+```bash
+kubectl create -f application.yaml 
+        (or)
+kubectl apply -f application.yaml
+```
+
 ##### To get the running PODs
 ```bash
 kubectl get pods
@@ -31,21 +48,9 @@ kubectl get pods
 kubectl get pods -o wide
 ```
 
-##### To create a new POD with running an application image.
-```bash
-kubectl run applicationName --image=imageNameInDockerRepository
-```
-
 ##### To get the more details about the POD.
 ```bash
 kubectl describe pod podName
-```
-
-##### To create a pod with yaml file.
-```bash
-kubectl create -f application.yaml 
-        (or)
-kubectl apply -f application.yaml
 ```
 
 ##### To delete the running POD
